@@ -1,0 +1,16 @@
+torch
+torchvision
+transformers
+datasets
+opencv-python
+networkx
+plotly
+gradio
+numpy
+pillow
+tqdm
+scikit-learn
+kaggle
+timm
+transformers 
+sentencepiece

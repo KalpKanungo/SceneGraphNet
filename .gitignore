@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment
+.env
+.venv
+env/
+venv/
+
+# Conda
+conda-meta/
+
+# Mac
+.DS_Store
+
+# Data
+data/
+!data/.gitkeep
+
+# Models
+models/
+*.pt
+*.pth
+*.bin
+
+# Logs
+*.log
+
+# Jupyter
+.ipynb_checkpoints
+
+# HuggingFace cache
+.cache/
+huggingface/
+
+
+gradio_cached_examples/
+
+
+*.zip
+*.tar
