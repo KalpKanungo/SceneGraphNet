@@ -5,9 +5,7 @@ import os
 from src.model import RelationshipNet
 from huggingface_hub import hf_hub_download
 
-# ========================
-# CONFIG
-# ========================
+
 MODEL_REPO = "kalpkanungo/scenegraphnet-relationship-model"
 MODEL_FILENAME = "relationship_model.pth"
 
@@ -15,9 +13,7 @@ LABEL_MAP_PATH = "data/relationship_dataset/label_map.json"
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
-# ========================
-# LOAD LABEL MAP
-# ========================
+
 if os.path.exists(LABEL_MAP_PATH):
     with open(LABEL_MAP_PATH) as f:
         label_map = json.load(f)
@@ -29,12 +25,10 @@ else:
         "2": "under"
     }
 
-inv_map = {int(k): v for k, v in label_map.items()}
+inv_map = {v: k for k, v in label_map.items()}
 num_classes = len(label_map)
 
-# ========================
-# LOAD MODEL FROM HF
-# ========================
+
 model = RelationshipNet(num_classes)
 
 try:
@@ -52,11 +46,9 @@ except Exception as e:
     print(f"⚠️ Failed to load model from HF: {e}")
     model = None
 
-# ========================
-# PREDICTION FUNCTION
-# ========================
+
 def predict(image):
-    # Fallback if model not loaded
+   
     if model is None:
         return "next to"
 
