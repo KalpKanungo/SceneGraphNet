@@ -113,6 +113,7 @@ Output:
 ---
 
 # 🏗️ Tech Stack
+```
 
 - **Computer Vision:** DETR (Hugging Face Transformers)
 - **Deep Learning:** PyTorch
@@ -121,6 +122,8 @@ Output:
 - **Image Processing:** OpenCV
 - **Frontend/UI:** Gradio
 - **Deployment:** Hugging Face Spaces
+
+```
 
 ---
 
