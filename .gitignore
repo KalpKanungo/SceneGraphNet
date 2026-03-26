@@ -17,8 +17,14 @@ conda-meta/
 .DS_Store
 
 # Data
-data/
+# Data
+data/*
 !data/.gitkeep
+!data/relationship_dataset/
+!data/relationship_dataset/*.json
+
+# Ignore heavy images inside dataset
+data/relationship_dataset/images/
 
 # Models
 models/
