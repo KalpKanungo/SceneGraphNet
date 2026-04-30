@@ -13,7 +13,7 @@ pinned: false
 A multimodal computer vision system that takes an input image, detects objects, predicts relationships between them, constructs a structured scene graph, and generates a natural language description of the scene.
 
 🔗 **Live Demo (Hugging Face Spaces):**  
-https://huggingface.co/spaces/<your-username>/scene-graph-generator
+https://huggingface.co/spaces/kalpkanungo/SceneGraphNet
 
 ---
 
